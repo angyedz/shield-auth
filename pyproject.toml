@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build-meta"
+
+[project]
+name = "shield-auth"
+version = "1.0.1"
+authors = [
+  { name="angyedz", email="hdigdi89@email.com" },
+]
+description = "Библиотека для безопасного хеширования паролей в TXT файлы"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "bcrypt",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["shield*"]
