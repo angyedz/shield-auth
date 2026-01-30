@@ -1,15 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="shield-auth",
-    version="1.0.2",
+    name="shield_auth",
+    version="1.0.3",
+    description="Библиотека для безопасного хранения паролей в TXT",
+    author="angyedz",
     packages=find_packages(),
     install_requires=[
-        "bcrypt",
+        "passlib>=",
     ],
-    author="angyedz",
-    description="Библиотека для безопасного хеширования паролей",
-    long_description=open("README.md", encoding="utf-8").read(),
-    long_description_content_type="text/markdown",
-    python_requires=">=3.7",
+    python_requires='>=3.7',
 )

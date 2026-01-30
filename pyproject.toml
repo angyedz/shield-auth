@@ -4,7 +4,7 @@ build-backend = "setuptools.build-meta"
 
 [project]
 name = "shield-auth"
-version = "1.0.2"
+version = "1.0.3"
 authors = [
   { name="angyedz", email="hdigdi89@email.com" },
 ]
@@ -12,7 +12,7 @@ description = "Библиотека для безопасного хеширов
 readme = "README.md"
 requires-python = ">=3.7"
 dependencies = [
-    "bcrypt",
+    "passlib",
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
